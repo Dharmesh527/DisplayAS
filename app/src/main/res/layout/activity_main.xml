@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaperflare"
+    android:backgroundTintMode="multiply">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:id="@+id/home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/timerunningl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="35sp"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_view_countdown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120sp"
+                    android:layout_marginTop="6sp"
+                    android:layout_marginBottom="10sp"
+                    android:fontFamily="monospace"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="00:00"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="#FFFFFF"
+                    android:textSize="96sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="26sp"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="3sp"
+                android:layout_marginRight="5sp"
+                android:orientation="horizontal"
+                android:padding="2.5sp">
+
+                <TextView
+                    android:id="@+id/teScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="1.5sp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/itim"
+                    android:padding="2.5sp"
+                    android:text="Team 1"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/team2Sce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1.5sp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/itim"
+                    android:padding="2.5sp"
+                    android:text="Team 2"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65sp"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:orientation="horizontal"
+                android:padding="2.5sp">
+
+                <TextView
+                    android:id="@+id/team1Score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="1.5sp"
+                    android:layout_weight="1"
+                    android:fontFamily="monospace"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="48sp"
+                    android:textStyle="bold"
+                    tools:text="0" />
+
+                <TextView
+                    android:id="@+id/team2Score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1.5sp"
+                    android:layout_weight="1"
+                    android:fontFamily="monospace"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="48sp"
+                    android:textStyle="bold"
+                    tools:text="0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_weight="2"
+                android:padding="2.5sp">
+
+                <TextView
+                    android:id="@+id/team1Coach"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="1.5sp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/itim"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:text="Coach" />
+
+                <TextView
+                    android:id="@+id/team2Coach"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1.5sp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/itim"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:text="Coach"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="5sp">
+
+                <ImageView
+                    android:id="@+id/t1to1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1.5sp"
+                    android:layout_marginRight="1.5sp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/t1" />
+
+                <ImageView
+                    android:id="@+id/t1to2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1.5sp"
+                    android:layout_marginRight="1.5sp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/t2" />
+
+                <ImageView
+                    android:id="@+id/t1to3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1.5sp"
+                    android:layout_marginRight="2sp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/t3" />
+
+                <ImageView
+                    android:id="@+id/t2to1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2sp"
+                    android:layout_marginRight="1.5sp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/t11" />
+
+                <ImageView
+                    android:id="@+id/t2to2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1.5sp"
+                    android:layout_marginRight="1.5sp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/t33" />
+
+                <ImageView
+                    android:id="@+id/t2to3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1.5sp"
+                    android:layout_marginRight="1.5sp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/t33" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="25sp"
+                android:layout_marginRight="5sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/winner"
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:backgroundTint="#0FFFFFFF"
+                    android:backgroundTintMode="src_in"
+                    android:fontFamily="@font/itim"
+                    android:gravity="center"
+                    android:text="TextView"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/starPlayer"
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:layout_marginTop="5sp"
+                    android:backgroundTint="#0FFFFFFF"
+                    android:backgroundTintMode="src_in"
+                    android:fontFamily="@font/itim"
+                    android:gravity="center"
+                    android:text="starPlayer"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:text="Star Player" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/navBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5sp"
+                android:layout_marginTop="25sp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/team1"
+                    android:layout_width="250sp"
+                    android:layout_height="65sp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_weight="1"
+                    android:backgroundTint="?android:attr/colorPressedHighlight"
+                    android:fontFamily="@font/acme"
+                    android:gravity="center"
+                    android:onClick="onClickTeam1"
+                    android:text="Team 1"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/team2"
+                    android:layout_width="250sp"
+                    android:layout_height="65sp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/button_ORANGE"
+                    android:fontFamily="@font/acme"
+                    android:gravity="center"
+                    android:onClick="onClickTeam2"
+                    android:text="Team 2"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
